@@ -1,0 +1,66 @@
+
+/* 从logo开始 */
+img{text-align: bottom;max-width: 100%}
+table {
+    text-shadow: 0 0 10px;
+  }
+.sousuo {
+  width: 1200px;
+  height: 140px;
+  margin: 0 auto;
+  border: 1px solid #333; }
+.logo-left {width: 20%;margin-top: 2px;}
+.logo-right select, input{font: 28px '楷体';color: #F85AB7;}
+.logo-right {width: 55%;font: 28px '楷体';color: #F85AB7;margin-top: 11px;}
+.logo-{background: #F85AB7;width: 200px;height: 50px;border-radius: 34px;line-height: 50px;padding-left: 54px;margin-top: 8px;font-size: 27px;color:#206FAA;}
+.sousuo-1 {
+    width: 100%;
+    height: 90px; }
+.sousuo-2 {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+   }
+p{    text-align: center;
+    color: red;
+    font: 21px '楷体';}
+.top .top-2 a{height: 230px;}
+b{    display: block;
+    text-align: center;
+    text-decoration: underline;
+    color: #A80AE6;
+    margin:20px auto;
+}
+.phone1{display:inline-block;width:18px;height:25px;background:url(../images/1.png) no-repeat;background-position:0 0;}
+.phone2{display:inline-block;width:18px;height:25px;background:url(../images/1.png) no-repeat;background-position:-15px 0;}
+strong {
+    text-align: center;
+    display: block;
+    width: 83px;
+    height: 22px;
+    background: #F85AB7;
+    border-radius: 52px;
+    margin-left: 25%;
+}
+.content li:hover{background:yellow;margin-top: 2px;cursor: pointer;}
+.ding .ding-right ul li:hover{background:#EF5181;color: #AA08A5}
+.ding .ding-left ul li:hover{background:#EF5181;color: #AA08A5}
+.top-2 a{position: relative;}
+.top-2 a strong{    position: absolute;
+    bottom: 20px;
+    right: 10px;}
+/* 右侧导航栏 */
+.louti{width: 50px;height: 322px;background: #F85AB7;position: fixed;top: 67px;
+right: 1px;border-radius: 10px;}
+.louti li{width: 50px;height: 26px;background: #EF5181;;margin-top: 20px;text-align: center;}
+.louti li:hover{background: #247FC5;}
+
+ #di .f-right{
+  width: 900px;
+  text-align: center;
+  background: url(../images/f-bg1.png) no-repeat;
+  height: 100%;
+
+} 
+
+

@@ -1,0 +1,46 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:#d0e4fe;
+}
+
+h1{
+  color:green;
+	text-align:center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+input[type="submit"]{
+	background-color:rgb(19,159,80);
+	color:#fff;
+	width:8em;
+  height:2em;
+}
+
+input[type="text"]{
+	width:12em;
+	height:1em;
+}
+
+input[type="password"]{
+	position: relative;
+	left: 14px;
+	width:12em;
+	height:1em;
+}
+
+label{
+	position: relative;
+	margin-left: 450px;
+}
+button{
+	background-color:rgb(19,159,80);
+	 color:#fff;
+	width:8em;
+	height:2em;
+	position: relative;
+	margin-left: 515px;
+}

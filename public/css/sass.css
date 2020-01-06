@@ -1,0 +1,132 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style-type: none; }
+
+ul {
+  display: inline-table; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+.cb {
+  clear: both; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+img {
+  vertical-align: bottom; }
+
+.header {width: 100%;background: #F85AB7;height: 40px;border-bottom: 2px solid red;position: fixed;top: 0px;z-index: 999; }
+
+.ding {
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto; }
+  .ding .ding-left, .ding .ding-right {
+    width: 85%;
+    text-align: center;
+    line-height: 40px;
+    height: 40px; }
+    .ding .ding-left ul, .ding .ding-right ul {
+      width: 100%; }
+      .ding .ding-left ul li {
+        float: left;
+        width: 80px;
+        color: #fff; }
+.ding .ding-right ul li{text-align: right;float: right; width: 80px;
+        color: #fff;}
+
+.ding .ding-right {
+  width: 15%; }
+
+.top {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid #333;
+  margin: 20px auto; }
+  .top .top-1 {
+    width: 100%;
+    height: 40px; }
+  .top .top-2 {
+    width: 100%;
+    height: 260px;
+    margin: 0 auto; }
+    .top .top-2 a {
+      display: inline-block;
+      width: 150px;
+      height: 200px;
+      border: 1px solid #333;
+      margin-left: 41px; }
+    .top .top-2 img {
+      padding: 14px; }
+
+
+.content {
+  width: 1200px;
+  height: 2500px;
+  margin: 0 auto;
+  border: 1px solid #333;
+  margin-top: 20px; }
+  .content .five {
+    width: 100%;
+    height: 100%; }
+    .content .five ul.five-1, .content .five .five-2, .content .five .five-3, .content .five .five-4, .content .five .five-5, .content .five .five-6 {
+      width: 100%;
+      height: 357px;
+      margin-top: 30px; }
+      .content .five ul.five-1 li, .content .five .five-2 li, .content .five .five-3 li, .content .five .five-4 li, .content .five .five-5 li, .content .five .five-6 li {
+        float: left;
+        margin-left: 40px;
+        border: 1px solid #333;
+        width: 190px;
+        height: 100%; }
+        .content .five ul.five-1 li img, .content .five .five-2 li img, .content .five .five-3 li img, .content .five .five-4 li img, .content .five .five-5 li img, .content .five .five-6 li img {
+          padding: 14px; }
+    .content .five .five-7 {
+      width: 600px;
+      height: 53px;
+      background: #EF5181;
+      margin: 59px auto;
+      text-align: center;
+      display: block;
+      font: bold 29px '楷体';
+      border-radius: 22px; }
+      .content .five .five-7 li {
+        line-height: 53px;
+        color: #fff; }
+
+.footer {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+   background: url(../images/f-bg.jpg) repeat-x;
+
+}
+  .footer table {
+    width: 300px;
+
+    height: 100%;
+    font: bold 33px '楷体'; }
+  .footer select, .footer radio{
+    width: 82px;
+    height: 41px;
+    font: 22px '楷体'; color: #F85AB7 }
+  .footer td{color: #F85AB7}
+
+
+/* 登录注册隐藏框 */
+
+.no1,.no2{display: none;width: 152px;height: 50px;background: #fff;color: black;border: 1px solid black;text-align: center;}
+.dl:hover .no1{display: block;position:absolute;top: 40px;right: 0px;}
+.zc:hover .no2{display: block;position:absolute;top: 40px;right: 152px;}
+/*# sourceMappingURL=sass.css.map */

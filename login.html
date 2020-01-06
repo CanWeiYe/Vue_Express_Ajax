@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>登录</title>
+    <link rel='stylesheet' href='public/stylesheets/style.css' />
+    <script src="public/js/vue.js"></script>
+    <script src="public/js/axios.js"></script>
+  </head>
+  <body>
+    <h1>登录</h1>
+    <div id="app">
+         <label>用户名:</label><input type="text" v-model="uAcc"><br></br>        
+         <label>密码:</label><input type="password" v-model="uPass"><br></br> 
+         <button @click="postData">登录</button>
+    </div>
+   <script>
+          var app=new Vue({
+              el:"#app",
+              data:{
+                  uAcc:"",
+                  uPass:"",
+                  message:""
+              },
+              methods:{
+                  postData(){
+                      axios.post("http://localhost:3000/user/login",{
+                          uAcc:this.uAcc,
+                          uPass:this.uPass
+                      }).then(function(response){
+                          this.message=response.data.message;
+                          alert(this.message);
+                      })
+                  }
+              }
+          })
+   </script>   
+  </body>
+</html>

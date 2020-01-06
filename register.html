@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <script src="public/js/vue.js"></script>
+    <script src="public/js/axios.js"></script>
+    <style>
+        body
+        {
+        	background-color:#d0e4fe;
+        }
+        label{
+            position: relative;
+            margin-left: 450px;
+        }
+        input[type="text"]{
+            position: relative;
+            margin-left: auto;
+            width: 15em;
+        }
+        input[type="password"]{
+            position: relative;
+            margin-left: auto;
+            width: 15em;
+        }
+        button{
+        	background-color:rgb(19,159,80);
+         	color:#fff;
+        	width:8em;
+	        height:2em;
+            position: relative;
+            margin-left: 520px;
+        }
+        .acc label{
+            position: relative;
+            margin-left: 435px;
+        }
+    </style>   
+</head>
+<body>
+    <div id="app">
+        <div class="acc"><label>用户名:</label><input type="text" v-model="uAcc"></div><br/>
+        <div><label>密码:</label><input type="password" v-model="uPass"></div><br/>
+        <div><label>昵称:</label><input type="text" v-model="uName"></div><br/>
+        <div><label>邮箱:</label><input type="text" v-model="uAddress"></div><br/>
+        <div><label>电话:</label><input type="text" v-model="uTel"></div><br/>
+        <button @click="postData">提交</button>
+    </div>
+    <script>
+        var app=new Vue({
+            el:"#app",
+            data:{
+                uAcc:"",
+                uPass:"",
+                uName:"",
+                uAddress:"",
+                uTel:"",
+                message:""
+            },
+            methods:{
+                postData(){
+                    // 得到数据
+                    // 用ajax把数据给node接口
+                    console.log("提交数据");
+                    axios.post("http://localhost:3000/user/register",{
+                        uAcc:this.uAcc,
+                        uPass:this.uPass,
+                        uName:this.uName,
+                        uAddress:this.uAddress,
+                        uTel:this.uTel
+                    }).then(function(response){
+                            this.message=response.data.message;
+                            alert(this.message);
+                    })
+                }
+            }
+        })
+    </script>    
+</body>
+</html>
